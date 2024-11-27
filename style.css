@@ -1,0 +1,424 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: white;
+    line-height: 1.6;
+    background: #383838;
+    
+}
+
+body::-webkit-scrollbar{
+  width: 12px;
+  background-color: #5d5c5c;
+}
+
+body::-webkit-scrollbar-thumb{
+  border-radius: 16px;
+  background-color: #7057ab;
+  
+}
+
+body::-webkit-scrollbar-thumb:hover{
+  cursor: pointer;
+  background-color: #9b7ee0;
+}
+
+header {
+    background: #3E3F3FFA;
+    padding: 10px 20px;
+    border-bottom: 1px solid #DDDDDDBD;
+    width: 100%;
+    height: 10vh;
+    position: absolute;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.intro{
+  text-align: center;
+  font-size: 15pt;
+  width: 50%;
+  font-weight: 600;
+  margin: -15px auto 20px auto;
+  color: #dddddd45;
+  
+}
+
+nav {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 70px;
+    font-weight: bold;
+    color: #9b7ee0;
+    border-radius: 50%;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18pt;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    
+}
+
+section{
+  background: #383838;
+  color: white;
+}
+
+section h2{
+  text-align: center;
+  font-size: 2rem;
+}
+
+section img{
+  width: 100%;
+}
+
+.about{
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin: 40px auto 40px auto;
+  
+} 
+
+.imagem{
+  width: 50%;
+  height: 100%;
+  padding: 25%;
+  border-radius: 20% 0;
+  box-shadow: 3px 3px 15px rgba(43, 43, 43, 0.664);
+  animation: carrocel 5s linear infinite alternate;
+}
+
+@keyframes carrocel {
+  0%{
+    background-image: url(./img/01.png);
+    background-position: center center;
+    background-size: cover;
+  }
+  50%{
+    background-image: url(./img/02.png);
+    background-position: center center;
+    background-size: cover;
+  }
+  100%{
+    background-image: url(./img/03.png);
+    background-position: center center;
+    background-size: cover;
+  }
+}
+
+.imagem img{
+  width: 100%;
+}
+
+
+.text{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 12px;
+  margin-block: 8rem;
+}
+
+.text p{
+  font-size: 18pt;
+  width: 400px;
+  margin-bottom: 18px;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f8f8f8;
+    background-image: url(./img/img1.png);
+    background-position: center center;
+    background-size: cover;
+    color: white;
+
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.hero h1 {
+    font-size: 5rem;
+    margin-top: -150px;
+}
+
+.hero span{
+  font-size: 3rem;
+  margin-top: -30px;
+  margin-bottom: 20px;
+  color: #8a6cd08f;
+}
+
+.btn {
+    padding: 5px 60px;
+    background: #7057ab;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 20pt;
+}
+
+
+.new-arrivals{
+  width: 80%;
+  margin: 0 auto;
+  margin-block: 5rem;
+}
+
+.new-arrivals h2{
+  font-size: 30pt;
+  margin-bottom: 3rem;
+}
+
+
+
+
+.product-grid, .collection-grid{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+
+
+.product, .collection-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.product p, .collection-item p{
+  font-size: 25pt;
+  margin-top: 12px;
+
+}
+
+.product span{
+  font-size: 20pt;
+  font-weight: 700;
+  margin-top: -10px;
+  color: #9b7ee0;
+}
+
+.collections{
+  margin-block: 6rem;
+}
+
+
+ .collection-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 3rem;
+  }
+  
+  .collection-grid h2{
+    font-size: 40pt;
+    margin-bottom: 3rem;
+  }
+
+  img{
+    border-radius: 1rem;
+  }
+
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 10px;
+    position: relative;
+ }
+.footer-columns{ 
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer h3 {
+    margin-bottom: 10px;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* Responsivo */
+@media (max-width: 768px) {
+  
+  
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        background: #fff;
+        color: rgb(29, 28, 28);
+        padding: 20px;
+        position: absolute;
+        top: 5rem;
+        right: 10px;
+        width: 200px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border: 1px solid #ddd;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #333;
+      font-size: 18pt;
+  }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+        margin-bottom: 18px;
+    }
+
+    .hero span{
+      font-size: 18pt;
+    }
+    
+  .about{
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-block: 30px 60px;
+  
+  } 
+
+  .intro{
+    text-align: center;
+    font-size: 10pt;
+    width: 80%;
+    font-weight: 600;
+    color: #dddddd45;
+    
+  }
+  
+  .text{
+    background: silver;
+    width: 100%;
+    padding-block: 15px;
+    margin-block: 0rem;
+  }
+
+  .about .imagem{
+    display: none;
+  }
+  
+  .text p{
+    color: #000000fd;
+    font-weight: 500;
+    font-size: 15pt;
+    width: 320px;
+    margin-bottom: 18px;
+  }
+
+  .btn{
+    font-size: 15pt;
+  }
+
+  .product-grid, .collection-grid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .product p, .collection-item p{
+    font-size: 18pt;
+    margin-top: 12px;
+  
+  }
+
+  .logo{
+    width: 45px;
+  }
+
+  .footer-columns{ 
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 12px;
+
+    
+}
+  
+
+}
+
+
